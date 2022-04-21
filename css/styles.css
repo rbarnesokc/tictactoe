@@ -29,15 +29,15 @@ h1 {
     display: grid;
     text-align: center;
     grid-template-columns: repeat(3, auto);
-    margin: 50px auto;
+    /* margin: 50px auto; */
 }
 
 .box {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border: 1px solid #333333;
     cursor: pointer;
-    line-height: 100px;
+    line-height: 80px;
     font-size: 60px;
 }
 
@@ -86,11 +86,11 @@ h1 {
     }
 
     .box {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
         border: 1px solid #333333;
         cursor: pointer;
-        line-height: 140px;
-        font-size: 80px;
+        line-height: 120px;
+        font-size: 70px;
     }
 }
