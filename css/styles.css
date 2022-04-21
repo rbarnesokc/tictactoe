@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#winprompt {
+    color: red;
+    font-size: 20px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#board {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, auto);
+    margin: 50px auto;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #333333;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+
+#restart {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3) {
+    border-top: none;
+}
+
+.box:nth-child(1),
+.box:nth-child(4),
+.box:nth-child(7) {
+    border-left: none;
+}
+
+.box:nth-child(3),
+.box:nth-child(6),
+.box:nth-child(9) {
+    border-right: none;
+}
+
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9) {
+    border-bottom: none;
+}
+
+@media screen and (min-width: 500px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    #winprompt {
+        font-size: 30px;
+    }
+
+    .box {
+        width: 140px;
+        height: 140px;
+        border: 1px solid #333333;
+        cursor: pointer;
+        line-height: 140px;
+        font-size: 80px;
+    }
+}
