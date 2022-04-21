@@ -29,7 +29,7 @@ h1 {
     display: grid;
     text-align: center;
     grid-template-columns: repeat(3, auto);
-    /* margin: 50px auto; */
+    margin: 10px auto;
 }
 
 .box {
